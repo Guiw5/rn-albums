@@ -1,0 +1,22 @@
+{
+  "editor.codeActionsOnSave": {
+    "source.fixAll.eslint": true,
+    "source.fixAll.stylelint": true,
+    "source.fixAll.tslint": false,
+    // "source.organizeImports": true,
+  },
+  "editor.defaultFormatter": "dbaeumer.vscode-eslint",
+  "editor.formatOnSave": true,
+  "eslint.alwaysShowStatus": true,
+  "eslint.packageManager": "yarn",
+  "jest.debugCodeLens.showWhenTestStateIn": [
+    "fail",
+    "unknown"
+  ],
+  "prettier.packageManager": "yarn",
+  "workbench.editor.highlightModifiedTabs": true,
+  "javascript.referencesCodeLens.enabled": true,
+  // "javascript.referencesCodeLens.showOnAllFunctions": true,
+  "jest.autoEnable": false,
+  "references.preferredLocation": "view"
+}

@@ -12,12 +12,13 @@ const styles = StyleSheet.create({
     borderColor: '#ddd',
     borderRadius: 2,
     borderBottomWidth: 0,
-    elevation: 1,
+    elevation: 2,
+    margin: 10,
   },
 });
 
 Card.propTypes = {
-  children: PropTypes.oneOf([
+  children: PropTypes.oneOfType([
     PropTypes.node,
     PropTypes.arrayOf(PropTypes.node),
   ]),

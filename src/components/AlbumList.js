@@ -1,24 +1,25 @@
-import React, { useEffect } from 'react';
-import PropTypes from 'prop-types';
-import { Text, View } from 'react-native';
+import React, { useEffect, useState } from 'react';
+import { ScrollView } from 'react-native';
 import axios from 'axios';
+import AlbumDetail from './AlbumDetail';
 
-export default function AlbumList() {
+function AlbumList() {
+  const [albums, setAlbums] = useState([]);
+
   useEffect(() => {
     async function fetchAlbums() {
-      const { data } = await axios.get(
-        'https://rallycoding.herokuapp.com/api/music_albums',
-      );
-      return data;
+      const { data } = await axios.get('https://rallycoding.herokuapp.com/api/music_albums');
+      setAlbums(data);
     }
-
-    const data = fetchAlbums();
-    console.log(data);
+    fetchAlbums();
   }, []);
 
   return (
-    <View>
-      <Text>asddd</Text>
-    </View>
+    <ScrollView>
+      {albums.map(album => (
+        <AlbumDetail key={album.title} album={album} />
+      ))}
+    </ScrollView>
   );
 }
+export default AlbumList;

@@ -12,10 +12,7 @@ function Button({ onPress, children }) {
 
 Button.propTypes = {
   onPress: PropTypes.func,
-  children: PropTypes.oneOfType([
-    PropTypes.node,
-    PropTypes.arrayOf(PropTypes.node),
-  ]),
+  children: PropTypes.oneOfType([PropTypes.node, PropTypes.arrayOf(PropTypes.node)]),
 };
 
 Button.defaultProps = {

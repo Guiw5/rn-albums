@@ -7,5 +7,5 @@ module.exports = {
   endOfLine: 'auto',
   packageManager: 'yarn',
   proseWrap: 'preserve',
-  printWidth: 160,
+  printWidth: 100,
 };

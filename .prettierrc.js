@@ -3,7 +3,9 @@ module.exports = {
   jsxBracketSameLine: false,
   singleQuote: true,
   trailingComma: 'all',
-  
-  arrowParens: 'always',
-  endOfLine: 'auto'
+  arrowParens: 'avoid',
+  endOfLine: 'auto',
+  packageManager: 'yarn',
+  proseWrap: 'preserve',
+  printWidth: 160,
 };

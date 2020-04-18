@@ -16,10 +16,10 @@ module.exports = {
   parser: "babel-eslint",
   rules: {
     "react/jsx-filename-extension": [ 1, { "extensions": [ ".js", ".jsx" , ".ts"] } ],
-    'react/prop-types': [2],
+    'react/prop-types': [0],
   },
   env: {
     "es6": true,
     "jest": true,
-  }
+  },
 };

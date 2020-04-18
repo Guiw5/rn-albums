@@ -11,7 +11,7 @@ function Header({ text }) {
 }
 const styles = StyleSheet.create({
   container: {
-    backgroundColor: '#f8f8f8',
+    backgroundColor: '#fefefe',
     justifyContent: 'center',
     alignItems: 'center',
     height: 60,
